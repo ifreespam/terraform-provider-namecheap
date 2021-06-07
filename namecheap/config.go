@@ -6,7 +6,7 @@ import (
 	"github.com/namecheap/go-namecheap-sdk"
 )
 
-// Config contains required namecheap client configuration settings.
+// Config contains required namecheap client configuration settings. hehe
 type Config struct {
 	username   string
 	apiUser    string
