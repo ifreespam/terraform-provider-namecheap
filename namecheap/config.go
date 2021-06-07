@@ -20,7 +20,7 @@ func (c *Config) Client() (*namecheap.Client, error) {
 	client, err := namecheap.NewClient(c.username, c.apiUser, c.token, c.ip, c.useSandbox)
 
 	if err != nil {
-		return nil, fmt.Errorf("Error setting up client: %s", err)
+		return nil, fmt.Errorf("Error setting up client!!!: %s", err)
 	}
 
 	return client, nil
