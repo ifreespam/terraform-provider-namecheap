@@ -41,6 +41,6 @@ jobs:
           distribution: goreleaser
           version: latest
           args: release --parallelism 2 --rm-dist
-#        env:
+        env:
 #          GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
