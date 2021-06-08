@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// I did something and it works
+	// I did something and it works 123
 	plugin.Serve(&plugin.ServeOpts{
 		ProviderFunc: namecheap.Provider,
 	})
