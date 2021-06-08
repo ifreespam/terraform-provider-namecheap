@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - '**'
-    tags:
-      - 'v*'
 
 jobs:
 
@@ -26,8 +24,6 @@ jobs:
 
       - name: Check
         run: make vet
-
-
 
       - name: Test
         run: make test
