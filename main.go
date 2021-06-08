@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// I did something and it works
 	plugin.Serve(&plugin.ServeOpts{
 		ProviderFunc: namecheap.Provider,
 	})
