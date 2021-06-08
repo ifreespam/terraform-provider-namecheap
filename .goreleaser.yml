@@ -16,8 +16,10 @@ builds:
     - -trimpath
   ldflags:
     - '-s -w -X main.version={{.Version}} -X main.commit={{.Commit}}'
-  goos: ['linux', 'windows', 'darwin']
-  goarch: ['amd64', '386', 'arm64']
+  goos: ['linux']
+#  goos: ['linux', 'windows', 'darwin']
+  goarch: ['amd64']
+#  goarch: ['amd64', '386', 'arm64']
   binary: '{{ .ProjectName }}_v{{ .Version }}_{{ .Os }}_{{ .Arch }}'
 
 archives:
@@ -32,7 +34,7 @@ checksum:
 
 release:
   # If you want to manually examine the release before its live, uncomment this line:
-   draft: true
+#   draft: true
 
 changelog:
   skip: true

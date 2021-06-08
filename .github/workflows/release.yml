@@ -11,14 +11,14 @@
 #
 name: release
 
-on:
-  push:
-    tags:
-      - 'v*'
-
 #on:
-#  release:
-#    types: [ published ]
+#  push:
+#    tags:
+#      - 'v*'
+
+on:
+  release:
+    types: [ published ]
 
 jobs:
   goreleaser:
