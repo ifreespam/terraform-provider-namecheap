@@ -17,8 +17,14 @@ name: release
 #      - 'v*'
 
 on:
-  release:
-    types: [ published ]
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   goreleaser:
