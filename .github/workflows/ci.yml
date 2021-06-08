@@ -17,13 +17,15 @@ jobs:
         with:
           go-version: 1.15
 
-      - name: Check
-        run: make vet
-
       - name: Lint
         uses: golangci/golangci-lint-action@v2
         with:
           version: v1.40.1
+
+      - name: Check
+        run: make vet
+
+
 
       - name: Test
         run: make test
